@@ -1,4 +1,4 @@
-#MEMEBERS ONLY
+# MEMBERS ONLY
 
 > An exercise on authentication. Implementing authentication on a Ruby on Rails app. Based on [this](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication) 
 
