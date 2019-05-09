@@ -4,8 +4,8 @@
 
 ## Collaborators 
 
-* Maya Douglas - [@mcrd25](https://github.com/mcrd25/)
 * Adriaan Beiertz - [@adriaanbd](https://github.com/adriaanbd)
+* Maya Douglas - [@mcrd25](https://github.com/mcrd25/)
 
 ## Getting started
 
