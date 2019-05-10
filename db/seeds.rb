@@ -17,3 +17,14 @@
     password_confirmation: password
   )
 end
+
+10.times do |n| 
+  title = "Lorem Ipsum No.#{n+1}"
+  body = "Sint temporibus quis tenetur quaerat officia est et. Aut corporis eum explicabo ab illo consectetur suscipit ut. Illo voluptatibus atque itaque. Voluptatem est et labore explicabo aperiam et eum"
+  user_id = User.first.id
+  Post.create!(
+    title: title,
+    body: body,
+    user_id: user_id
+  )
+end

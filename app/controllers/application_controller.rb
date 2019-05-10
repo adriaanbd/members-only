@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
-  #before_action :authorize_helper
+
+  def not_logged_in?
+    !logged_in?
+  end
 end
