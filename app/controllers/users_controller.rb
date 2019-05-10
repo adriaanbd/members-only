@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :authorize
+  #skip_before_action :authorize_helper
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -29,6 +29,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        login @user # login after signup
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else

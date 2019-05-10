@@ -1,4 +1,4 @@
-<section class="member_form">
+<section class="login_form">
   <% if flash[:alert] %>
     <aside class="notice"><%= flash[:alert] %></aside>
   <% end %>
@@ -13,8 +13,15 @@
       <%= label_tag :password, 'Password:' %>
       <%= password_field_tag :password, params[:password] %>
     </div>
+
+    <div class="field">
+      <%= label_tag :remember_me, 'Remember Me:' %>
+      <%= check_box_tag :remember_me %>
+    </div>
+
     <div class="actions">
       <%= submit_tag "Login" %>
     </div>
   <% end %>
+  <p>New user? <%= link_to "Sign up now!", signup_path %></p>
 </section>
